@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useTranslation } from '../../lib/i18n-app';
 import LanguageSwitcher from '../../components/ui/LanguageSwitcher';
 import { ThemeToggle } from '../../components/ui/ThemeToggle';
@@ -15,6 +16,11 @@ import { Downloads } from '../../components/sections/Downloads';
 
 export default function Home() {
   const { t } = useTranslation();
+
+  // <html> comes from the root layout shared with the French page, which renders lang="fr".
+  useEffect(() => {
+    document.documentElement.lang = 'en';
+  }, []);
 
   return (
     <div className="bg-background text-foreground min-h-screen">
