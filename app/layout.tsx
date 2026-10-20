@@ -70,9 +70,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code',
-  },
   category: 'technology',
   classification: 'Portfolio',
   other: {
@@ -114,18 +111,6 @@ export default function RootLayout({
 
         {/* Web App Manifest */}
         <link rel="manifest" href="/site.webmanifest" />
-
-        {/* Theme Colors */}
-        <meta name="theme-color" content="#000000" />
-        <meta name="msapplication-TileColor" content="#000000" />
-
-        {/* Apple-specific */}
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
-        <meta name="apple-mobile-web-app-title" content="NeedACoffee" />
 
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
