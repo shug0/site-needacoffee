@@ -1,0 +1,11 @@
+// Cloudflare Worker without code: it serves the static export of Next.js (out/).
+// An unknown path gets out/404.html with a 404 status.
+{
+  "name": "cv",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "cv.needacoffee.fr", "custom_domain": true }]
+}

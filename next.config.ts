@@ -1,44 +1,12 @@
 import type { NextConfig } from 'next';
 
+// Static export: `next build` writes plain HTML to out/, served by a Cloudflare Worker
+// (wrangler.jsonc). Security headers live in public/_headers, since an export ignores headers().
 const nextConfig: NextConfig = {
-  // Performance optimizations
-  compress: true,
+  output: 'export',
   poweredByHeader: false,
-  generateEtags: false,
-  // Image optimization
   images: {
-    formats: ['image/webp', 'image/avif'],
-    minimumCacheTTL: 60,
-  },
-  // Security headers
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'strict-origin-when-cross-origin',
-          },
-          {
-            key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=()',
-          },
-        ],
-      },
-    ];
+    unoptimized: true,
   },
 };
 

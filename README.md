@@ -1,8 +1,8 @@
-## needacoffee.fr
+## cv.needacoffee.fr
 
 Personal site and portfolio for Thomas Alberola.
 
-<img src="public/readme/preview.png" alt="Preview of needacoffee.fr" width="980" />
+<img src="public/readme/preview.png" alt="Preview of cv.needacoffee.fr" width="980" />
 
 ### Tech
 
@@ -22,7 +22,7 @@ npm run dev
 
 - `npm run dev`: start dev server
 - `npm run build`: production build
-- `npm run start`: start production server
+- `npx wrangler deploy`: deploy `out/` to the Cloudflare Worker (Workers Builds runs it on every push to `main`)
 - `npm run type-check`: TypeScript check
 - `npm run lint`: ESLint
 - `npm run format`: Biome format write

@@ -12,7 +12,7 @@ export function Hero() {
         {/* Profile Picture */}
         <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border border-foreground/10 object-cover">
           <Image
-            src="/profile.png"
+            src="/profile.webp"
             alt="Thomas Alberola"
             width={224}
             height={224}

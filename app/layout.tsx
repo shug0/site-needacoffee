@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { openSans, sora } from '../lib/fonts';
-import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://needacoffee.fr'),
+  metadataBase: new URL('https://cv.needacoffee.fr'),
   alternates: {
     canonical: '/',
     languages: {
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://needacoffee.fr',
+    url: 'https://cv.needacoffee.fr',
     title: 'Thomas Alberola - Senior Frontend React Developer',
     description:
       'Senior Frontend React Developer with over 8 years experience in fintech, SaaS, and creator economy.',
@@ -138,7 +137,6 @@ export default function RootLayout({
       </head>
       <body className={`${openSans.variable} ${sora.variable} font-sans`}>
         {children}
-        <Analytics />
       </body>
     </html>
   );
