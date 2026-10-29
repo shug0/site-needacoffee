@@ -1,146 +1,152 @@
 {
   "meta": {
-    "title": "Thomas Alberola - Senior Frontend React Developer | 8+ ans d'expérience",
-    "description": "Senior Frontend React Developer avec plus de 8 ans d'expérience dans la fintech, le SaaS B2B, le conseil digital et les outils pour créateurs de contenu.",
-    "keywords": "développeur frontend senior, React, TypeScript, Vue.js, design systems, performance web, fintech, SaaS, Bordeaux"
+    "title": "Thomas Alberola - Senior Full Stack Developer | 10+ ans d'expérience",
+    "description": "Senior Full Stack Developer avec plus de 10 ans d'expérience dans la fintech, le SaaS B2B, le conseil digital et les outils pour créateurs de contenu.",
+    "keywords": "développeur full stack senior, développeur frontend senior, React, TypeScript, Supabase, Cloudflare, IA, design systems, performance web, fintech, SaaS, Bordeaux"
+  },
+  "nav": {
+    "label": "Navigation principale",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
   },
   "hero": {
     "name": "Thomas Alberola",
-    "title": "Senior Frontend React Developer",
-    "subtitle": "Senior Frontend React Developer, j'accompagne les entreprises dans la réalisation d'applications web performantes, évolutives et orientées expérience utilisateur."
+    "title": "Senior Full Stack Developer",
+    "subtitle": "Je conçois des applications web complètes, du design system à la base de données.",
+    "location": "Bordeaux · Télétravail",
+    "currentRole": "En poste chez SeDomicilier",
+    "contactCta": "Me contacter",
+    "experience": "10+ ans d'expérience"
   },
   "presentation": {
     "title": "Présentation",
-    "description": "Depuis plus de 8 ans, j'ai évolué dans des contextes variés : fintech, SaaS B2B, conseil digital, et outils pour créateurs de contenu. Ma spécialité : construire des architectures frontend robustes, efficaces et adaptées aux enjeux business."
+    "description": "Depuis plus de 10 ans, j'ai évolué dans des contextes variés : fintech, SaaS B2B, conseil digital, et outils pour créateurs de contenu. Ma spécialité : construire des applications web de bout en bout, de l'interface à la base de données, adaptées aux enjeux business.",
+    "ai": "J'utilise l'IA pour programmer, automatiser et synthétiser, pas pour créer à la place des artistes.",
+    "aiLink": "Ma vision de l'IA",
+    "aiUrl": "https://ia.needacoffee.fr/"
   },
   "skills": {
     "title": "Compétences principales",
+    "frontend": {
+      "title": "Frontend et design systems",
+      "items": [
+        "Bibliothèques de composants partagées, design tokens et thèmes (Shadcn UI, Style Dictionary)",
+        "Chargement optimisé : code splitting, lazy loading, profiling",
+        "Cache et requêtes côté client : React Query, Apollo GraphQL",
+        "Formulaires typés, accessibilité, tests end-to-end (Cypress, Playwright)"
+      ]
+    },
+    "backend": {
+      "title": "Backend et données",
+      "items": [
+        "PostgreSQL sur Supabase : migrations, sécurité par ligne (RLS), temps réel",
+        "API serverless sur Cloudflare Workers, back-office Payload CMS",
+        "WebSockets (Socket.io), Firebase, API REST"
+      ]
+    },
+    "ai": {
+      "title": "IA et outillage",
+      "items": [
+        "Intégration d'outils IA (Claude, Gemini)",
+        "Outillage IA d'équipe : serveurs MCP, agents, skills et hooks Claude Code",
+        "Guidelines pour les assistants IA (Cursor, Claude Code)",
+        "Monorepo (Turborepo), CI/CD, outillage de l'expérience développeur"
+      ]
+    },
     "leadership": {
-      "title": "Leadership",
+      "title": "Leadership et conseil",
       "items": [
         "Pilotage de migrations d'architecture frontend",
-        "Mentorat de collaborateurs (revues de code, pair programming)",
-        "Élaboration et application des bonnes pratiques frontend",
-        "Rédaction de guidelines spécifiques aux assistants IA (Cursor, etc.)"
+        "Mentorat : revues de code, pair programming",
+        "Audit de code, documentation, bonnes pratiques d'équipe"
       ]
     },
     "roadmap": {
-      "cta": "Voir ma progression sur roadmap.sh"
-    },
-    "designSystems": {
-      "title": "Design Systems",
-      "items": [
-        "Conception de bibliothèques de composants partagées et réutilisables",
-        "Gestion fine des design tokens (thèmes, typographie, couleurs)",
-        "Intégration de kits UI modernes (Shadcn UI, Style Dictionary)"
-      ]
-    },
-    "performance": {
-      "title": "DX & Performance",
-      "items": [
-        "Optimisation du chargement (code splitting, lazy loading)",
-        "Gestion avancée du cache et des requêtes (React Query, Vue Query)",
-        "Client GraphQL et gestion du cache avec Apollo GraphQL",
-        "Conception d'architectures frontend modulaires (Turborepo)",
-        "Mise en place de tests end-to-end robustes (Cypress, Playwright)",
-        "Amélioration continue de l'expérience développeur (outillage, CI/CD)"
-      ]
+      "cta": "Voir mes compétences sur roadmap.sh"
     }
-  },
-  "domains": {
-    "title": "Domaines d'intervention",
-    "items": [
-      "Architecture Frontend : structures modulaires, monorepo, organisation scalable",
-      "Design Systems : design tokens, bibliothèques partagées, theming",
-      "Performance & Optimisation : lazy loading, profiling, gestion du cache",
-      "Expérience Utilisateur : formulaires typés, accessibilité, tests E2E",
-      "Temps réel & API : WebSockets (Socket.io), Supabase, Firebase, APIs REST",
-      "Automatisation & IA : CI/CD, intégration d'assistants IA, outils dev augmentés",
-      "Conseil & Bonnes Pratiques : audit de code, documentation, mentorat, architecture"
-    ]
   },
   "experience": {
     "title": "Expérience",
+    "current": "En poste",
+    "sedomicilier": {
+      "title": "SeDomicilier · Software Engineer",
+      "period": "CDI · Télétravail · depuis janv. 2026",
+      "items": [
+        "Refonte du site vitrine sedomicilier.fr sur Next.js et Payload CMS",
+        "Réflexion et conception du design system avec le designer, sur Figma",
+        "Back-office de contenu multilingue (France et Belgique : français, anglais, néerlandais)",
+        "Pages SEO générées par commune et par département",
+        "Intégration d'outils IA"
+      ]
+    },
+    "orguin": {
+      "title": "Orguin · Fondateur et développeur full stack",
+      "period": "Projet personnel · juin 2025 – janv. 2026",
+      "items": [
+        "SaaS de gestion d'événements pour petites et moyennes structures, disponible sur orguin.com",
+        "Né d'un besoin observé sur le terrain : fichiers Excel complexes, perte d'information sur les rôles",
+        "Planification des rôles des membres pour chaque événement, puis sélection finale"
+      ]
+    },
     "pause": {
-      "title": "Pause professionnelle — Voyage au Japon",
+      "title": "Pause professionnelle · Voyage au Japon",
       "period": "mars 2025 – juin 2025",
       "items": [
-        "Voyage personnel & exploration culturelle au Japon",
-        "Planification logistique et préparation de projets de side-projects à distance"
+        "Voyage personnel et exploration culturelle au Japon",
+        "Préparation de projets personnels à distance"
       ]
     },
     "tudigo": {
-      "title": "Tudigo — Senior Frontend Developer",
-      "period": "CDI · Hybride (Bordeaux) — févr. 2024 – févr. 2025",
+      "title": "Tudigo · Senior Frontend Developer",
+      "period": "CDI · Hybride (Bordeaux) · févr. 2024 – févr. 2025",
       "items": [
-        "Tech lead sur une application React moderne (TypeScript, Zustand, Tailwind)",
-        "Création de formulaires robustes avec React Hook Form & Zod",
-        "Intégration et structuration du design system via Shadcn UI",
-        "Développement de vues complexes et fonctionnalités métier",
-        "Gestion des mises à jour, migrations et revues de code"
+        "Pilotage technique du frontend d'une plateforme d'investissement participatif (environ 18 000 investisseurs actifs) : React, TypeScript, Zustand, Tailwind",
+        "Standardisation des formulaires critiques avec React Hook Form et Zod : moins d'erreurs de saisie, parcours plus fluide",
+        "Refonte et stabilisation du design system : Shadcn UI, documentation Storybook, gestion des tokens",
+        "Gouvernance technique : revues de code, mises à jour des dépendances, documentation interne, accompagnement des développeurs"
       ]
     },
     "jellysmack": {
-      "title": "Jellysmack — Frontend Developer > Senior Frontend Developer",
-      "period": "CDI · Remote — août 2021 – mai 2024",
+      "title": "Jellysmack · Frontend Developer puis Senior Frontend Developer",
+      "period": "CDI · Télétravail · août 2021 – mai 2024",
       "items": [
-        "Développement en Vue.js sur des produits orientés créateurs de contenu",
-        "Collaboration multi-squads, intégration d'APIs média, animations & UI",
-        "Conception d'applications React (vidéos, pub, marketing)",
-        "Initiateur de la migration globale de Vue vers React à l'échelle de l'entreprise",
-        "Adoption de React Query pour une gestion efficace du cache côté client",
-        "Intégration d'Apollo GraphQL (client, stratégies de cache, store normalisé)",
-        "Mise en place d'un design system sous la forme d'un plugin Tailwind",
-        "Architecture monorepo avec Turborepo",
-        "Tests ciblés (Cypress), revue de code, mentoring, choix techniques"
+        "Scale-up de la creator economy, organisation multi-squads, plus de 10 milliards de vues par mois",
+        "Migration de Redux vers React Query : environ 60 % de code répétitif en moins, 30 à 40 % de temps de développement gagné",
+        "Initiateur de la transition de Vue.js vers React (environ 15 développeurs), argumentaire technique validé par la direction",
+        "Monorepo Turborepo (environ 6 packages), intégration d'Apollo GraphQL, accompagnement des développeurs juniors",
+        "Design system multi-framework en plugin Tailwind : environ 20 composants pour 3 squads, 25 à 35 % de temps de développement UI en moins",
+        "Outil web de présentation pour les équipes commerciales, à la place des PowerPoint faits à la main : environ 50 % de temps gagné",
+        "Tests Cypress, revues de code, mentorat, choix techniques"
       ]
     },
     "yousign": {
-      "title": "Yousign — Front-End Developer",
-      "period": "CDI · Remote — juil. 2019 – août 2021",
+      "title": "Yousign · Frontend Developer",
+      "period": "CDI · Télétravail · juil. 2019 – août 2021",
       "items": [
-        "Développement de fonctionnalités pour application de signature électronique",
-        "Interface dynamique, tests Jest / Testing Library / Cypress",
-        "Optimisations front (rendering, lazy loading)"
+        "Scale-up LegalTech de signature électronique",
+        "Refonte du composant critique de validation de signature : signature par glisser, animations, meilleure accessibilité",
+        "Optimisations front : lazy loading, code splitting, tests automatisés (Jest, Testing Library, Cypress)",
+        "Formation Epic React de Kent C. Dodds (2021)"
       ]
     },
     "ekino": {
-      "title": "Ekino — Junior Front-End Developer",
-      "period": "CDI · Bordeaux — sept. 2016 – juil. 2019",
+      "title": "Ekino · Junior Frontend Developer",
+      "period": "CDI · Bordeaux · sept. 2016 – juil. 2019",
       "items": [
+        "Agence digitale grands comptes (BNP Paribas, Renault, Canal+)",
         "Conception d'interfaces AngularJS, Angular 2+, React",
-        "Création d'apps mobiles hybrides (Cordova, Ionic, React Native)",
-        "UI responsive, tests unitaires (Jasmine, Karma, Jest)"
+        "Applications mobiles hybrides (Cordova, Ionic, React Native)",
+        "Wrapper Electron multi-agences, repris en interne par BNP Paribas pour ses tests QA",
+        "Interfaces responsive, tests unitaires (Jasmine, Karma, Jest)"
       ]
     }
   },
   "projects": {
     "title": "Projets personnels en cours",
-    "instantane": {
-      "title": "Instantané Impro",
-      "url": "https://instantane-impro-app.vercel.app",
-      "description": "Application dédiée à un spectacle d'improvisation : le public peut uploader des photos en début de représentation, qui sont ensuite projetées en fond de scène pour inspirer les comédiens. Backend Supabase, interface d'administration, gestion live d'uploads."
-    },
-    "orguin": {
-      "title": "Orguin – Qui fait quoi ?",
-      "url": "https://orguin.com",
-      "description": "Plateforme web de gestion d'événements pour associations, troupes ou petites structures. Permet de centraliser la gestion des projets, des rôles et des inscriptions avec des pages publiques et privées. Utilise Supabase, React et une logique de permissions."
-    },
-    "pnj": {
-      "title": "Générateur de PNJ",
-      "url": "https://pnj.jdr.coffee",
-      "description": "Outil de création de personnages non-joueurs pour le jeu de rôle. Génération de nom, apparence, traits et backstory grâce à une intégration d'IA. Utilisé pour enrichir les parties de JDR improvisées ou préparées."
-    },
-    "combien": {
-      "title": "Combien ça coûte ?",
-      "url": "https://combien.jdr.coffee",
-      "description": "Base de données de plus de 300 objets d'inspiration médiévale-fantastique. Permet de chercher par catégorie, rareté ou usage. Données maintenues via un proxy Notion. Pensé comme un outil de MJ minimaliste et rapide."
-    },
-    "discord": {
-      "title": "Bots Discord",
-      "url": "https://github.com/shug0",
-      "description": "Collection de bots d'automatisation pour Discord : outils de gestion de rôles, mini-jeux communautaires, outils d'animation et de modération. Déployés sur des serveurs de plus de 8000 utilisateurs. Utilise Node.js, Supabase, Socket.io et Discord.js."
-    }
+    "favorite": "Projet favori",
+    "more": "Et {count} autres projets, du wiki aux outils d'impro, sur"
   },
   "education": {
     "title": "Formation",
@@ -162,27 +168,24 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Ouvert aux nouvelles missions et projets stimulants.",
-    "email": "contact@needacoffee.fr",
+    "subtitle": "En poste et bien installé, mais toujours ouvert à la discussion.",
     "linkedin": "LinkedIn",
-    "github": "GitHub"
-  },
-  "downloads": {
-    "title": "Téléchargements",
-    "description": "Retrouvez mes documents professionnels au format PDF pour faciliter le partage et l'archivage.",
-    "download": "Télécharger",
-    "cv": {
-      "title": "CV complet",
-      "description": "Version complète de mon CV avec toutes les informations personnelles et professionnelles.",
-      "type": "CV complet"
-    },
-    "anonymous": {
-      "title": "Dossier de compétences anonymisé",
-      "description": "Version anonymisée de mon profil pour les processus de recrutement confidentiels.",
-      "type": "Version anonymisée"
-    }
+    "github": "GitHub",
+    "revealEmail": "Afficher l'e-mail",
+    "revealHint": "Adresse chiffrée dans la page et déchiffrée au clic, pour limiter les robots."
   },
   "accessibility": {
     "skipToContent": "Aller au contenu principal"
+  },
+  "theme": {
+    "toggle": "Changer de thème",
+    "toDark": "Passer en mode sombre",
+    "toLight": "Passer en mode clair"
+  },
+  "language": {
+    "switch": "Read in English"
+  },
+  "footer": {
+    "backToTop": "Retour en haut"
   }
 }

@@ -1,146 +1,152 @@
 {
   "meta": {
-    "title": "Thomas Alberola - Senior Frontend React Developer | 8+ years experience",
-    "description": "Senior Frontend React Developer with over 8 years of experience in fintech, SaaS B2B, digital consulting and content creator tools.",
-    "keywords": "senior frontend developer, React, TypeScript, Vue.js, design systems, web performance, fintech, SaaS, Bordeaux"
+    "title": "Thomas Alberola - Senior Full Stack Developer | 10+ years experience",
+    "description": "Senior Full Stack Developer with over 10 years of experience in fintech, SaaS B2B, digital consulting and content creator tools.",
+    "keywords": "senior full stack developer, senior frontend developer, React, TypeScript, Supabase, Cloudflare, AI, design systems, web performance, fintech, SaaS, Bordeaux"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "hero": {
     "name": "Thomas Alberola",
-    "title": "Senior Frontend React Developer",
-    "subtitle": "As a Senior Frontend React Developer, I help companies build performant, scalable and user experience-oriented web applications."
+    "title": "Senior Full Stack Developer",
+    "subtitle": "I design complete web applications, from the design system to the database.",
+    "location": "Bordeaux · Remote",
+    "currentRole": "Currently at SeDomicilier",
+    "contactCta": "Contact me",
+    "experience": "10+ years of experience"
   },
   "presentation": {
     "title": "Presentation",
-    "description": "For over 8 years, I have evolved in various contexts: fintech, SaaS B2B, digital consulting, and content creator tools. My specialty: building robust, efficient frontend architectures adapted to business challenges."
+    "description": "For over 10 years, I have evolved in various contexts: fintech, SaaS B2B, digital consulting, and content creator tools. My specialty: building web applications end to end, from the interface to the database, adapted to business challenges.",
+    "ai": "I use AI to code, automate and summarize, not to create in place of artists.",
+    "aiLink": "My take on AI",
+    "aiUrl": "https://ia.needacoffee.fr/en/"
   },
   "skills": {
     "title": "Key skills",
+    "frontend": {
+      "title": "Frontend and design systems",
+      "items": [
+        "Shared component libraries, design tokens and theming (Shadcn UI, Style Dictionary)",
+        "Faster loading: code splitting, lazy loading, profiling",
+        "Client-side caching and queries: React Query, Apollo GraphQL",
+        "Typed forms, accessibility, end-to-end tests (Cypress, Playwright)"
+      ]
+    },
+    "backend": {
+      "title": "Backend and data",
+      "items": [
+        "PostgreSQL on Supabase: migrations, row-level security (RLS), realtime",
+        "Serverless APIs on Cloudflare Workers, Payload CMS back office",
+        "WebSockets (Socket.io), Firebase, REST APIs"
+      ]
+    },
+    "ai": {
+      "title": "AI and tooling",
+      "items": [
+        "AI tools integration (Claude, Gemini)",
+        "Team AI tooling: MCP servers, agents, Claude Code skills and hooks",
+        "Guidelines for AI assistants (Cursor, Claude Code)",
+        "Monorepo (Turborepo), CI/CD, developer experience tooling"
+      ]
+    },
     "leadership": {
-      "title": "Leadership",
+      "title": "Leadership and consulting",
       "items": [
         "Frontend architecture migration management",
-        "Team member mentoring (code reviews, pair programming)",
-        "Development and application of frontend best practices",
-        "Writing guidelines specific to AI assistants (Cursor, etc.)"
+        "Mentoring: code reviews, pair programming",
+        "Code audits, documentation, team best practices"
       ]
     },
     "roadmap": {
-      "cta": "View my roadmap.sh progress"
-    },
-    "designSystems": {
-      "title": "Design Systems",
-      "items": [
-        "Design of shared and reusable component libraries",
-        "Fine management of design tokens (themes, typography, colors)",
-        "Integration of modern UI kits (Shadcn UI, Style Dictionary)"
-      ]
-    },
-    "performance": {
-      "title": "DX & Performance",
-      "items": [
-        "Loading optimization (code splitting, lazy loading)",
-        "Advanced cache and query management (React Query, Vue Query)",
-        "GraphQL client and cache management with Apollo GraphQL",
-        "Design of modular frontend architectures (Turborepo)",
-        "Implementation of robust end-to-end tests (Cypress, Playwright)",
-        "Continuous improvement of developer experience (tooling, CI/CD)"
-      ]
+      "cta": "View my skills on roadmap.sh"
     }
-  },
-  "domains": {
-    "title": "Areas of intervention",
-    "items": [
-      "Frontend Architecture: modular structures, monorepo, scalable organization",
-      "Design Systems: design tokens, shared libraries, theming",
-      "Performance & Optimization: lazy loading, profiling, cache management",
-      "User Experience: typed forms, accessibility, E2E tests",
-      "Real-time & APIs: WebSockets (Socket.io), Supabase, Firebase, REST APIs",
-      "Automation & AI: CI/CD, AI assistant integration, augmented dev tools",
-      "Consulting & Best Practices: code audit, documentation, mentoring, architecture"
-    ]
   },
   "experience": {
     "title": "Experience",
+    "current": "Current",
+    "sedomicilier": {
+      "title": "SeDomicilier · Software Engineer",
+      "period": "Full-time · Remote · since Jan. 2026",
+      "items": [
+        "Redesign of the sedomicilier.fr marketing site on Next.js and Payload CMS",
+        "Design system thinking and design with the designer, in Figma",
+        "Multilingual content back office (France and Belgium: French, English, Dutch)",
+        "SEO pages generated per town and per department",
+        "AI tools integration"
+      ]
+    },
+    "orguin": {
+      "title": "Orguin · Founder and full stack developer",
+      "period": "Personal project · June 2025 – Jan. 2026",
+      "items": [
+        "Event management SaaS for small and medium organizations, available at orguin.com",
+        "Born from a need seen in the field: complex Excel files, lost information about roles",
+        "Planning members' roles for each event, then the final selection"
+      ]
+    },
     "pause": {
-      "title": "Professional break — Japan trip",
+      "title": "Professional break · Japan trip",
       "period": "March 2025 – June 2025",
       "items": [
-        "Personal travel & cultural exploration in Japan",
-        "Logistics planning and preparation of remote side-projects"
+        "Personal travel and cultural exploration in Japan",
+        "Preparation of remote personal projects"
       ]
     },
     "tudigo": {
-      "title": "Tudigo — Senior Frontend Developer",
-      "period": "Full-time · Hybrid (Bordeaux) — Feb. 2024 – Feb. 2025",
+      "title": "Tudigo · Senior Frontend Developer",
+      "period": "Full-time · Hybrid (Bordeaux) · Feb. 2024 – Feb. 2025",
       "items": [
-        "Tech lead on a modern React application (TypeScript, Zustand, Tailwind)",
-        "Creation of robust forms with React Hook Form & Zod",
-        "Integration and structuring of design system via Shadcn UI",
-        "Development of complex views and business features",
-        "Management of updates, migrations and code reviews"
+        "Frontend technical lead on a crowdfunding investment platform (about 18,000 active investors): React, TypeScript, Zustand, Tailwind",
+        "Standardized critical forms with React Hook Form and Zod: fewer input errors, smoother user flows",
+        "Redesigned and stabilized the design system: Shadcn UI, Storybook documentation, token management",
+        "Technical governance: code reviews, dependency updates, internal documentation, developer support"
       ]
     },
     "jellysmack": {
-      "title": "Jellysmack — Frontend Developer > Senior Frontend Developer",
-      "period": "Full-time · Remote — Aug. 2021 – May 2024",
+      "title": "Jellysmack · Frontend Developer, then Senior Frontend Developer",
+      "period": "Full-time · Remote · Aug. 2021 – May 2024",
       "items": [
-        "Vue.js development on content creator-oriented products",
-        "Multi-squad collaboration, media API integration, animations & UI",
-        "React application design (videos, ads, marketing)",
-        "Initiator of the global Vue to React migration at company scale",
-        "Adoption of React Query for efficient client-side cache management",
-        "Apollo GraphQL integration (client, cache policies, normalized store)",
-        "Implementation of a design system in the form of a Tailwind plugin",
-        "Monorepo architecture with Turborepo",
-        "Targeted tests (Cypress), code review, mentoring, technical choices"
+        "Creator economy scale-up, multi-squad organization, over 10 billion monthly views",
+        "Redux to React Query migration: about 60% less boilerplate, 30 to 40% less development time",
+        "Initiated the Vue.js to React transition (about 15 developers), technical case approved by management",
+        "Turborepo monorepo (about 6 packages), Apollo GraphQL integration, junior developer mentoring",
+        "Cross-framework design system as a Tailwind plugin: about 20 components for 3 squads, 25 to 35% less UI development time",
+        "Web presentation tool for the sales teams, replacing hand-made PowerPoints: about 50% time saved",
+        "Cypress tests, code reviews, mentoring, technical choices"
       ]
     },
     "yousign": {
-      "title": "Yousign — Front-End Developer",
-      "period": "Full-time · Remote — July 2019 – Aug. 2021",
+      "title": "Yousign · Frontend Developer",
+      "period": "Full-time · Remote · July 2019 – Aug. 2021",
       "items": [
-        "Feature development for electronic signature application",
-        "Dynamic interface, Jest / Testing Library / Cypress tests",
-        "Frontend optimizations (rendering, lazy loading)"
+        "LegalTech scale-up for electronic signature",
+        "Redesign of the critical signature validation component: drag-to-sign, animations, better accessibility",
+        "Frontend optimizations: lazy loading, code splitting, automated tests (Jest, Testing Library, Cypress)",
+        "Epic React training by Kent C. Dodds (2021)"
       ]
     },
     "ekino": {
-      "title": "Ekino — Junior Front-End Developer",
-      "period": "Full-time · Bordeaux — Sept. 2016 – July 2019",
+      "title": "Ekino · Junior Frontend Developer",
+      "period": "Full-time · Bordeaux · Sept. 2016 – July 2019",
       "items": [
+        "Digital agency for large accounts (BNP Paribas, Renault, Canal+)",
         "AngularJS, Angular 2+, React interface design",
-        "Hybrid mobile app creation (Cordova, Ionic, React Native)",
+        "Hybrid mobile apps (Cordova, Ionic, React Native)",
+        "Multi-agency Electron wrapper, adopted in-house by BNP Paribas for its QA tests",
         "Responsive UI, unit tests (Jasmine, Karma, Jest)"
       ]
     }
   },
   "projects": {
     "title": "Current personal projects",
-    "instantane": {
-      "title": "Instantané Impro",
-      "url": "https://instantane-impro-app.vercel.app",
-      "description": "Application dedicated to an improvisation show: the audience can upload photos at the beginning of the performance, which are then projected as stage background to inspire the actors. Supabase backend, admin interface, live upload management."
-    },
-    "orguin": {
-      "title": "Orguin – Who does what?",
-      "url": "https://orguin.com",
-      "description": "Web platform for event management for associations, troupes or small structures. Allows centralizing project management, roles and registrations with public and private pages. Uses Supabase, React and permission logic."
-    },
-    "pnj": {
-      "title": "NPC Generator",
-      "url": "https://pnj.jdr.coffee",
-      "description": "Tool for creating non-player characters for role-playing games. Name, appearance, traits and backstory generation through AI integration. Used to enrich improvised or prepared RPG sessions."
-    },
-    "combien": {
-      "title": "How much does it cost?",
-      "url": "https://combien.jdr.coffee",
-      "description": "Database of over 300 medieval-fantasy inspired objects. Allows searching by category, rarity or usage. Data maintained via Notion proxy. Designed as a minimalist and fast GM tool."
-    },
-    "discord": {
-      "title": "Discord Bots",
-      "url": "https://github.com/shug0",
-      "description": "Collection of Discord automation bots: role management tools, community mini-games, animation and moderation tools. Deployed on servers with over 8000 users. Uses Node.js, Supabase, Socket.io and Discord.js."
-    }
+    "favorite": "Favorite project",
+    "more": "And {count} more projects, from wikis to improv tools, on"
   },
   "education": {
     "title": "Education",
@@ -162,27 +168,24 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Open to new stimulating missions and projects.",
-    "email": "contact@needacoffee.fr",
+    "subtitle": "Happily employed, but always open to a conversation.",
     "linkedin": "LinkedIn",
-    "github": "GitHub"
-  },
-  "downloads": {
-    "title": "Downloads",
-    "description": "Find my professional documents in PDF format for easy sharing and archiving.",
-    "download": "Download",
-    "cv": {
-      "title": "Complete CV",
-      "description": "Complete version of my CV with all personal and professional information.",
-      "type": "Complete CV"
-    },
-    "anonymous": {
-      "title": "Anonymous skills portfolio",
-      "description": "Anonymized version of my profile for confidential recruitment processes.",
-      "type": "Anonymized version"
-    }
+    "github": "GitHub",
+    "revealEmail": "Show email",
+    "revealHint": "The address is encrypted in the page and decrypted on click, to keep bots away."
   },
   "accessibility": {
     "skipToContent": "Go to main content"
+  },
+  "theme": {
+    "toggle": "Switch theme",
+    "toDark": "Switch to dark mode",
+    "toLight": "Switch to light mode"
+  },
+  "language": {
+    "switch": "Lire en français"
+  },
+  "footer": {
+    "backToTop": "Back to top"
   }
 }

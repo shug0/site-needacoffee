@@ -4,17 +4,21 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Thomas Alberola - Senior Frontend React Developer',
+    default: 'Thomas Alberola - Senior Full Stack Developer',
     template: '%s | NeedACoffee',
   },
   description:
-    'Senior Frontend React Developer with over 8 years experience in fintech, SaaS, and creator economy. Expert in design systems, performance, and scalable architecture.',
+    'Senior Full Stack Developer with over 10 years experience in fintech, SaaS, and creator economy. React and Next.js interfaces, Supabase and Cloudflare backends, AI integration.',
   keywords: [
     'React',
     'Next.js',
     'TypeScript',
+    'Full Stack',
     'Frontend',
     'Developer',
+    'Supabase',
+    'Cloudflare',
+    'AI',
     'Design Systems',
     'Performance',
   ],
@@ -38,24 +42,24 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://cv.needacoffee.fr',
-    title: 'Thomas Alberola - Senior Frontend React Developer',
+    title: 'Thomas Alberola - Senior Full Stack Developer',
     description:
-      'Senior Frontend React Developer with over 8 years experience in fintech, SaaS, and creator economy.',
+      'Senior Full Stack Developer with over 10 years experience in fintech, SaaS, and creator economy.',
     siteName: 'NeedACoffee',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Thomas Alberola - Senior Frontend React Developer',
+        alt: 'Thomas Alberola - Senior Full Stack Developer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Thomas Alberola - Senior Frontend React Developer',
+    title: 'Thomas Alberola - Senior Full Stack Developer',
     description:
-      'Senior Frontend React Developer with over 8 years experience in fintech, SaaS, and creator economy.',
+      'Senior Full Stack Developer with over 10 years experience in fintech, SaaS, and creator economy.',
     images: ['/og-image.jpg'],
     creator: '@shug0',
   },
