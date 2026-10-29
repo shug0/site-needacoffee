@@ -151,12 +151,12 @@
   "education": {
     "title": "Education",
     "estei": {
-      "title": "ESTEI Bordeaux — Master Web Project Manager",
+      "title": "ESTEI Bordeaux · Master Web Project Manager",
       "period": "2014 – 2016",
       "description": "Frontend development, project management, UX, digital production tools."
     },
     "iut": {
-      "title": "IUT Michel de Montaigne — DUT SRC",
+      "title": "IUT Michel de Montaigne · DUT SRC",
       "period": "2012 – 2014",
       "description": "Digital communication, web development, audiovisual & multimedia."
     },

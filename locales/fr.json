@@ -151,12 +151,12 @@
   "education": {
     "title": "Formation",
     "estei": {
-      "title": "ESTEI Bordeaux — Mastère Chef de Projet Web",
+      "title": "ESTEI Bordeaux · Mastère Chef de Projet Web",
       "period": "2014 – 2016",
       "description": "Développement frontend, gestion de projet, UX, outils de production numérique."
     },
     "iut": {
-      "title": "IUT Michel de Montaigne — DUT SRC",
+      "title": "IUT Michel de Montaigne · DUT SRC",
       "period": "2012 – 2014",
       "description": "Communication numérique, développement web, audiovisuel & multimédia."
     },
