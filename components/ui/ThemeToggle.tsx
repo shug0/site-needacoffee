@@ -1,8 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslation } from '../../lib/i18n-app';
+
+const TOGGLE_CLASSES =
+  'flex h-11 w-11 items-center justify-center rounded-lg bg-surface border border-border hover:bg-foreground/5 transition-colors';
 
 export function ThemeToggle() {
+  const { t } = useTranslation();
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [mounted, setMounted] = useState(false);
 
@@ -36,8 +41,8 @@ export function ThemeToggle() {
     return (
       <button
         type="button"
-        className="p-2 rounded-lg bg-surface border border-border hover:bg-foreground/5 transition-colors"
-        aria-label="Basculer le thème"
+        className={TOGGLE_CLASSES}
+        aria-label={t('theme.toggle')}
       >
         <svg
           className="w-5 h-5"
@@ -62,10 +67,8 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-surface border border-border hover:bg-foreground/5 transition-colors"
-      aria-label={`Basculer vers le mode ${
-        theme === 'light' ? 'sombre' : 'clair'
-      }`}
+      className={TOGGLE_CLASSES}
+      aria-label={t(theme === 'light' ? 'theme.toDark' : 'theme.toLight')}
     >
       {theme === 'light' ? (
         <svg

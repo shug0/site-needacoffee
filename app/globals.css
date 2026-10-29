@@ -6,6 +6,15 @@
   --foreground-secondary: #525252;
   --surface: #fafafa;
   --border: #e5e5e5;
+  --accent: #8b5a2b;
+  --accent-soft: #f5ebe0;
+  --accent-glow: rgb(217 160 102 / 0.35);
+  --gradient-from: #6f4420;
+  --gradient-to: #9a5f2b;
+  --on-gradient: #ffffff;
+  --band-from: #f1e4d5;
+  --mesh-glow: rgb(242 200 148 / 0.3);
+  --band-to: #f9f3ec;
 }
 
 [data-theme="light"] {
@@ -14,6 +23,15 @@
   --foreground-secondary: #525252;
   --surface: #fafafa;
   --border: #e5e5e5;
+  --accent: #8b5a2b;
+  --accent-soft: #f5ebe0;
+  --accent-glow: rgb(217 160 102 / 0.35);
+  --gradient-from: #6f4420;
+  --gradient-to: #9a5f2b;
+  --on-gradient: #ffffff;
+  --band-from: #f1e4d5;
+  --mesh-glow: rgb(242 200 148 / 0.3);
+  --band-to: #f9f3ec;
 }
 
 [data-theme="dark"] {
@@ -22,6 +40,15 @@
   --foreground-secondary: #a3a3a3;
   --surface: #171717;
   --border: #262626;
+  --accent: #d9a066;
+  --accent-soft: #3a2a1c;
+  --accent-glow: rgb(217 160 102 / 0.22);
+  --gradient-from: #d9a066;
+  --gradient-to: #f2c894;
+  --on-gradient: #1a1208;
+  --band-from: #221a12;
+  --mesh-glow: rgb(217 160 102 / 0.1);
+  --band-to: #15110d;
 }
 
 @theme inline {
@@ -30,6 +57,8 @@
   --color-foreground-secondary: var(--foreground-secondary);
   --color-surface: var(--surface);
   --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
   --font-sans: var(--font-open-sans);
   --font-display: var(--font-sora);
 }
@@ -42,16 +71,38 @@
     --foreground-secondary: #a3a3a3;
     --surface: #171717;
     --border: #262626;
+    --accent: #d9a066;
+    --accent-soft: #3a2a1c;
+    --accent-glow: rgb(217 160 102 / 0.22);
+    --gradient-from: #d9a066;
+    --gradient-to: #f2c894;
+    --on-gradient: #1a1208;
+    --band-from: #221a12;
+    --mesh-glow: rgb(217 160 102 / 0.1);
+    --band-to: #15110d;
   }
 }
 
 @media print {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
   :root {
     --background: #ffffff !important;
     --foreground: #171717 !important;
     --foreground-secondary: #525252 !important;
     --surface: #fafafa !important;
     --border: #e5e5e5 !important;
+    --accent: #8b5a2b !important;
+    --accent-soft: #f5ebe0 !important;
+    --accent-glow: transparent !important;
+    --gradient-from: #6f4420 !important;
+    --gradient-to: #9a5f2b !important;
+    --on-gradient: #ffffff !important;
+    --band-from: #ffffff !important;
+    --mesh-glow: transparent !important;
+    --band-to: #ffffff !important;
   }
   html {
     font-size: 14px !important;
@@ -67,14 +118,70 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Unlayered on purpose: these override the Tailwind border and background utilities of Card and Button */
+.gradient-text {
+  background: linear-gradient(120deg, var(--gradient-from), var(--gradient-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-border {
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    linear-gradient(120deg, var(--gradient-from), var(--gradient-to)) border-box;
+}
+
+.gradient-fill {
+  background: linear-gradient(120deg, var(--gradient-from), var(--gradient-to));
+  color: var(--on-gradient);
+}
+
+.hero-mesh {
+  background:
+    radial-gradient(38% 60% at 78% 42%, var(--accent-glow), transparent 70%),
+    radial-gradient(32% 50% at 12% 10%, var(--mesh-glow), transparent 70%);
+}
+
+.photo-glow {
+  box-shadow: 0 24px 48px -16px var(--accent-glow);
+}
+
+/* Cards inside a band keep the page background so they stand out from the tint */
+.band {
+  background: linear-gradient(to bottom, var(--band-from), var(--band-to));
+  border-block: 1px solid var(--border);
+  --surface: var(--background);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  /* Starts at the center of the first dot: top-7 (1.75rem) + half its h-4 (0.5rem) */
+  top: 2.25rem;
+  bottom: 0.5rem;
+  width: 2px;
+  border-radius: 9999px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+}
+
+/* data-theme is set by ThemeToggle once JS runs: without JS, nothing stays hidden */
+.reveal {
+  transition:
+    opacity 400ms ease-out,
+    transform 400ms ease-out;
+}
+
+[data-theme] .reveal[data-visible='false'] {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
 /* Performance optimizations */
 * {
   box-sizing: border-box;
-}
-
-/* Optimize paint and layout */
-.font-display {
-  will-change: transform;
 }
 
 /* Reduce layout shifts */

@@ -10,12 +10,12 @@ interface LinkProps extends TypographyProps {
   href: string;
 }
 
-// Titre principal (nom)
+// Titre principal (rôle)
 export function Title({ children, className = '', id }: TypographyProps) {
   return (
     <h1
       id={id}
-      className={`text-7xl md:text-8xl font-semibold tracking-tight text-foreground font-display ${className}`}
+      className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground font-display ${className}`}
     >
       {children}
     </h1>

@@ -4,7 +4,7 @@ interface ButtonProps {
   children: ReactNode;
   className?: string;
   id?: string;
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline' | 'accent' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
   href?: string;
   target?: string;
@@ -13,10 +13,11 @@ interface ButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   type?: 'button' | 'submit' | 'reset';
+  ariaDescribedBy?: string;
 }
 
 const baseClasses =
-  'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed';
+  'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background focus:ring-accent disabled:opacity-50 disabled:cursor-not-allowed';
 
 const variants = {
   primary:
@@ -25,6 +26,8 @@ const variants = {
     'bg-surface text-foreground hover:bg-surface/80 active:bg-surface/70 border border-border',
   outline:
     'border border-border text-foreground hover:bg-surface active:bg-surface/80',
+  accent:
+    'gradient-fill hover:opacity-90 active:opacity-80',
   ghost: 'text-foreground hover:bg-surface active:bg-surface/80',
 };
 
@@ -47,6 +50,7 @@ export function Button({
   onClick,
   disabled = false,
   type = 'button',
+  ariaDescribedBy,
 }: ButtonProps) {
   const classes = `${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`;
 
@@ -61,6 +65,7 @@ export function Button({
         className={classes}
         onClick={onClick}
         aria-disabled={disabled}
+        aria-describedby={ariaDescribedBy}
       >
         {children}
       </a>
@@ -75,6 +80,7 @@ export function Button({
       onClick={onClick}
       disabled={disabled}
       aria-disabled={disabled}
+      aria-describedby={ariaDescribedBy}
     >
       {children}
     </button>
