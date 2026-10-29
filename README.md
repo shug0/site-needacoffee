@@ -41,11 +41,11 @@ To build against a local copy: `PROJECTS_URL=http://localhost:<port>/projects.js
 
 ### Deployment
 
-Deployed on Vercel. No CI in-repo; checks run on Vercel.
+Static export served by a Cloudflare Worker on `cv.needacoffee.fr`. Cloudflare rebuilds and deploys it on every push to `main`. No CI in-repo.
 
 ### License
 
-MIT — see `LICENSE`.
+MIT, see `LICENSE`.
 
 ### Lighthouse
 
