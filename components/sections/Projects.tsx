@@ -1,74 +1,78 @@
 import { useTranslation } from '../../lib/i18n-app';
+import type { CvProject } from '../../lib/projects';
 import { Section } from '../ui/Section';
 import { SectionTitle, CardTitle, BodyText } from '../ui/Typography';
 import { Card } from '../ui/Card';
 import { Button } from '../ui/Button';
-import { ExternalLink, Github } from 'lucide-react';
+import { TagList } from '../ui/TagList';
+import { ExternalLink, Star } from 'lucide-react';
 
-export function Projects() {
-  const { t } = useTranslation();
+interface ProjectsProps {
+  projects: CvProject[];
+  otherProjectCount: number;
+}
 
-  const projects = [
-    {
-      title: t('projects.instantane.title'),
-      description: t('projects.instantane.description'),
-      url: t('projects.instantane.url'),
-    },
-    {
-      title: t('projects.orguin.title'),
-      description: t('projects.orguin.description'),
-      url: t('projects.orguin.url'),
-    },
-    {
-      title: t('projects.pnj.title'),
-      description: t('projects.pnj.description'),
-      url: t('projects.pnj.url'),
-    },
-    {
-      title: t('projects.combien.title'),
-      description: t('projects.combien.description'),
-      url: t('projects.combien.url'),
-    },
-    {
-      title: t('projects.discord.title'),
-      description: t('projects.discord.description'),
-      url: t('projects.discord.url'),
-    },
-  ];
+export function Projects({ projects, otherProjectCount }: ProjectsProps) {
+  const { t, locale } = useTranslation();
 
   return (
     <Section aria-labelledby="projects-title">
       <SectionTitle id="projects-title">{t('projects.title')}</SectionTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
-          <Card key={project.title} className="space-y-4 p-6">
+          <Card
+            key={project.id}
+            className="flex flex-col gap-4 p-6"
+          >
             <div className="space-y-2">
-              <CardTitle>{project.title}</CardTitle>
-              <BodyText>{project.description}</BodyText>
+              <div className="flex items-center gap-2">
+                {project.isFavorite && (
+                  <Star
+                    className="w-5 h-5 shrink-0 fill-current text-accent"
+                    role="img"
+                    aria-label={t('projects.favorite')}
+                  />
+                )}
+                <CardTitle>{project.name}</CardTitle>
+              </div>
+              <BodyText>{project.description[locale]}</BodyText>
+              {project.highlight && (
+                <p className="text-sm font-semibold text-accent">
+                  {project.highlight[locale]}
+                </p>
+              )}
             </div>
+            <TagList
+              tags={project.tags.map((tag) => ({
+                label: tag.label[locale],
+                url: tag.url,
+              }))}
+            />
             <Button
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
               variant="primary"
               size="sm"
-              className="w-fit gap-2"
+              className="mt-auto w-fit gap-2"
             >
-              {project.url.includes('github.com') ? (
-                <>
-                  <Github className="w-4 h-4" />
-                  Voir sur GitHub
-                </>
-              ) : (
-                <>
-                  <ExternalLink className="w-4 h-4" />
-                  {project.url.replace(/^https?:\/\//, '')}
-                </>
-              )}
+              <ExternalLink className="w-4 h-4" aria-hidden="true" />
+              {new URL(project.url).hostname.replace(/^www\./, '')}
             </Button>
           </Card>
         ))}
       </div>
+      {otherProjectCount > 0 && (
+        <p className="text-foreground-secondary">
+          {t('projects.more').replace('{count}', String(otherProjectCount))}{' '}
+          <a
+            href="https://needacoffee.fr/"
+            className="font-medium text-accent underline underline-offset-4 hover:no-underline"
+          >
+            needacoffee.fr
+          </a>
+        </p>
+      )}
     </Section>
   );
 }

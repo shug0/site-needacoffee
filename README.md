@@ -33,11 +33,11 @@ npm run dev
 - English: `en` at `/en`
 - Keys live in `locales/fr.json` and `locales/en.json`
 
-### Downloads
+### Projects
 
-- CV FR: `public/files/Thomas_Alberola_CV_FR.pdf`
-- CV EN: `public/files/Thomas_Alberola_CV _EN.pdf`
-- Anonymous skills dossier (FR only): `public/files/Dossier de compétence Anonyme - Senior frontend.pdf`
+The "Projects" section is not in this repo: `next build` downloads `https://needacoffee.fr/projects.json` (source: `monorepo-tomo-farm/apps/home/projects.json`) and shows the entries marked `cv: true`. The build fails if that URL is unreachable or a CV project has no English description. After changing the list, deploy needacoffee.fr first, then redeploy this site.
+
+To build against a local copy: `PROJECTS_URL=http://localhost:<port>/projects.json npm run build`.
 
 ### Deployment
 
@@ -52,4 +52,4 @@ MIT — see `LICENSE`.
 <img src="public/readme/lighthouse-100.png" alt="Scores Lighthouse 100/100 sur toutes les catégories" width="680" />
 
 ### Learning / Roadmap
-- Frontend Developer progress on roadmap.sh: [View my progress](https://roadmap.sh/frontend?s=6899cdb4614598977eaa6104)
+- Skill profile on roadmap.sh (Frontend, Full Stack, Backend, AI Engineer, Software Architect, Claude Code): [View my skills](https://roadmap.sh/u/thomasalberola)
