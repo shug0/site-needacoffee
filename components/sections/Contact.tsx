@@ -3,7 +3,8 @@ import { Section } from '../ui/Section';
 import { SectionTitle } from '../ui/Typography';
 import { Button } from '../ui/Button';
 import { EmailReveal } from '../ui/EmailReveal';
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { Github, Linkedin } from '../ui/BrandIcons';
 
 export function Contact() {
   const { t } = useTranslation();

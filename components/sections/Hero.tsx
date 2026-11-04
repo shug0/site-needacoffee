@@ -3,7 +3,8 @@ import { Section } from '../ui/Section';
 import { Title, Text } from '../ui/Typography';
 import { Button } from '../ui/Button';
 import { EmailReveal } from '../ui/EmailReveal';
-import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
+import { Github, Linkedin } from '../ui/BrandIcons';
 import Image from 'next/image';
 
 const PROFILE_SRC = '/profile.webp';
