@@ -7,29 +7,28 @@
     "prebuild": "rm -rf .next/cache/fetch-cache",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "type-check": "tsc --noEmit",
     "format": "biome format --write .",
     "format:check": "echo 'Format check completed'",
     "check": "npm run type-check && npm run lint && npm run format:check"
   },
   "dependencies": {
-    "lucide-react": "^0.532.0",
-    "next": "15.4.10",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "lucide-react": "^0.577.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.1.2",
-    "@eslint/eslintrc": "^3",
+    "@biomejs/biome": "^2.6.4",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^26",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.4.4",
+    "eslint-config-next": "16.4.5",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^6.0.3"
   }
 }
