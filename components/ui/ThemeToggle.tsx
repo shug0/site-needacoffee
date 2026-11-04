@@ -1,39 +1,41 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useSyncExternalStore } from 'react';
 import { useTranslation } from '../../lib/i18n-app';
 
 const TOGGLE_CLASSES =
   'flex h-11 w-11 items-center justify-center rounded-lg bg-surface border border-border hover:bg-foreground/5 transition-colors';
 
+const subscribeNoop = () => () => {};
+
+function readInitialTheme(): 'light' | 'dark' {
+  if (typeof window === 'undefined') return 'light';
+  // Récupérer le thème depuis localStorage
+  const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
+  if (savedTheme) return savedTheme;
+  // Utiliser la préférence système par défaut
+  return window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? 'dark'
+    : 'light';
+}
+
 export function ThemeToggle() {
   const { t } = useTranslation();
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
-  const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState(readInitialTheme);
+  const mounted = useSyncExternalStore(
+    subscribeNoop,
+    () => true,
+    () => false
+  );
 
   useEffect(() => {
-    setMounted(true);
-    // Récupérer le thème depuis localStorage
-    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.setAttribute('data-theme', savedTheme);
-    } else {
-      // Utiliser la préférence système par défaut
-      const prefersDark = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      ).matches;
-      const defaultTheme = prefersDark ? 'dark' : 'light';
-      setTheme(defaultTheme);
-      document.documentElement.setAttribute('data-theme', defaultTheme);
-    }
-  }, []);
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
   };
 
   // Éviter le rendu côté serveur pour éviter l'hydratation
