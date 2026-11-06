@@ -1,8 +1,16 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
-
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": true
+  },
   "linter": {
     "enabled": true,
+    "includes": ["**", "!public/**"],
     "rules": {
       "preset": "recommended",
       "style": {
@@ -11,6 +19,10 @@
       "correctness": {
         "noUnusedVariables": "error"
       }
+    },
+    "domains": {
+      "next": "recommended",
+      "react": "recommended"
     }
   },
   "formatter": {
@@ -24,6 +36,11 @@
       "quoteStyle": "single",
       "trailingCommas": "es5",
       "semicolons": "always"
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
     }
   }
 }

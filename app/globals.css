@@ -83,6 +83,7 @@
   }
 }
 
+/* biome-ignore-start lint/complexity/noImportantStyles: l'impression doit écraser le thème et les animations */
 @media print {
   .reveal {
     opacity: 1 !important;
@@ -108,6 +109,7 @@
     font-size: 14px !important;
   }
 }
+/* biome-ignore-end lint/complexity/noImportantStyles: fin du bloc impression */
 
 body {
   background: var(--background);
@@ -197,6 +199,7 @@ object {
 }
 
 /* Optimize animations */
+/* biome-ignore-start lint/complexity/noImportantStyles: le mouvement réduit doit primer sur toute animation */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -206,3 +209,4 @@ object {
     transition-duration: 0.01ms !important;
   }
 }
+/* biome-ignore-end lint/complexity/noImportantStyles: fin du bloc mouvement réduit */
