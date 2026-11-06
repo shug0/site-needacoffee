@@ -52,4 +52,5 @@ MIT, see `LICENSE`.
 <img src="public/readme/lighthouse-100.png" alt="Scores Lighthouse 100/100 sur toutes les catégories" width="680" />
 
 ### Learning / Roadmap
+
 - Skill profile on roadmap.sh (Frontend, Full Stack, Backend, AI Engineer, Software Architect, Claude Code): [View my skills](https://roadmap.sh/u/thomasalberola)

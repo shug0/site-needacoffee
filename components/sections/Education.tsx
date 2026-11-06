@@ -1,12 +1,12 @@
 import { useTranslation } from '../../lib/i18n-app';
+import { Card } from '../ui/Card';
 import { Section } from '../ui/Section';
 import {
-  SectionTitle,
-  CardTitle,
-  TextSecondary,
   BodyText,
+  CardTitle,
+  SectionTitle,
+  TextSecondary,
 } from '../ui/Typography';
-import { Card } from '../ui/Card';
 
 export function Education() {
   const { t } = useTranslation();

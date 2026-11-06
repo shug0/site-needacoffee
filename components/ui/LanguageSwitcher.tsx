@@ -1,7 +1,7 @@
 'use client';
 
-import { useTranslation } from '../../lib/i18n-app';
 import { memo } from 'react';
+import { useTranslation } from '../../lib/i18n-app';
 
 const LanguageSwitcher = memo(function LanguageSwitcher() {
   const { t, locale, changeLocale } = useTranslation();

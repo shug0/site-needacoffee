@@ -66,14 +66,18 @@ export function SiteNav() {
             {t('hero.name')}
           </a>
           <div className="flex items-center gap-6">
-            {renderLinks('hidden items-center gap-6 text-sm font-medium md:flex')}
+            {renderLinks(
+              'hidden items-center gap-6 text-sm font-medium md:flex'
+            )}
             <div className="flex items-center gap-3">
               <ThemeToggle />
               <LanguageSwitcher />
             </div>
           </div>
         </div>
-        {renderLinks('-mt-2 flex justify-between text-sm font-medium md:hidden')}
+        {renderLinks(
+          '-mt-2 flex justify-between text-sm font-medium md:hidden'
+        )}
       </nav>
     </header>
   );

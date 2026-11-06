@@ -1,11 +1,11 @@
+import { Mail, MapPin } from 'lucide-react';
+import Image from 'next/image';
 import { useTranslation } from '../../lib/i18n-app';
-import { Section } from '../ui/Section';
-import { Title, Text } from '../ui/Typography';
+import { Github, Linkedin } from '../ui/BrandIcons';
 import { Button } from '../ui/Button';
 import { EmailReveal } from '../ui/EmailReveal';
-import { Mail, MapPin } from 'lucide-react';
-import { Github, Linkedin } from '../ui/BrandIcons';
-import Image from 'next/image';
+import { Section } from '../ui/Section';
+import { Text, Title } from '../ui/Typography';
 
 const PROFILE_SRC = '/profile.webp';
 

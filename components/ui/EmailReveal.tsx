@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useId, useState, type ReactNode } from 'react';
+import { type ReactNode, useEffect, useId, useState } from 'react';
 import { useTranslation } from '../../lib/i18n-app';
 import { decodeEmail, ENCODED_EMAIL } from '../../lib/obfuscated-email';
 import { Button } from './Button';

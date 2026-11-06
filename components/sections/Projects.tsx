@@ -1,11 +1,11 @@
+import { ExternalLink, Star } from 'lucide-react';
 import { useTranslation } from '../../lib/i18n-app';
 import type { CvProject } from '../../lib/projects';
-import { Section } from '../ui/Section';
-import { SectionTitle, CardTitle, BodyText } from '../ui/Typography';
-import { Card } from '../ui/Card';
 import { Button } from '../ui/Button';
+import { Card } from '../ui/Card';
+import { Section } from '../ui/Section';
 import { TagList } from '../ui/TagList';
-import { ExternalLink, Star } from 'lucide-react';
+import { BodyText, CardTitle, SectionTitle } from '../ui/Typography';
 
 interface ProjectsProps {
   projects: CvProject[];
@@ -20,10 +20,7 @@ export function Projects({ projects, otherProjectCount }: ProjectsProps) {
       <SectionTitle id="projects-title">{t('projects.title')}</SectionTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
-          <Card
-            key={project.id}
-            className="flex flex-col gap-4 p-6"
-          >
+          <Card key={project.id} className="flex flex-col gap-4 p-6">
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 {project.isFavorite && (

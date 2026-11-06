@@ -1,9 +1,9 @@
+import { Bot, Layers, ListCheck, Server, Users } from 'lucide-react';
 import { useTranslation } from '../../lib/i18n-app';
-import { Section } from '../ui/Section';
-import { SectionTitle, CardTitle } from '../ui/Typography';
 import { Button } from '../ui/Button';
 import { Card } from '../ui/Card';
-import { Layers, Server, Bot, Users, ListCheck } from 'lucide-react';
+import { Section } from '../ui/Section';
+import { CardTitle, SectionTitle } from '../ui/Typography';
 
 const SKILL_CARDS = [
   { key: 'frontend', icon: Layers },
@@ -33,7 +33,10 @@ export function Skills() {
           return (
             <Card key={skill.title} className="space-y-4">
               <div className="flex items-center gap-2">
-                <IconComponent className="w-5 h-5 text-accent" aria-hidden="true" />
+                <IconComponent
+                  className="w-5 h-5 text-accent"
+                  aria-hidden="true"
+                />
                 <CardTitle>{skill.title}</CardTitle>
               </div>
               <ul className={BULLET_LIST_CLASSES}>

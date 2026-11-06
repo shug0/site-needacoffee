@@ -26,8 +26,7 @@ const variants = {
     'bg-surface text-foreground hover:bg-surface/80 active:bg-surface/70 border border-border',
   outline:
     'border border-border text-foreground hover:bg-surface active:bg-surface/80',
-  accent:
-    'gradient-fill hover:opacity-90 active:opacity-80',
+  accent: 'gradient-fill hover:opacity-90 active:opacity-80',
   ghost: 'text-foreground hover:bg-surface active:bg-surface/80',
 };
 

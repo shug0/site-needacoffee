@@ -1,8 +1,8 @@
 import { useTranslation } from '../../lib/i18n-app';
-import { Section } from '../ui/Section';
-import { SectionTitle, CardTitle, TextSecondary } from '../ui/Typography';
 import { Card } from '../ui/Card';
+import { Section } from '../ui/Section';
 import { TagList } from '../ui/TagList';
+import { CardTitle, SectionTitle, TextSecondary } from '../ui/Typography';
 
 const EXPERIENCE_KEYS = [
   'sedomicilier',
@@ -23,14 +23,27 @@ const EXPERIENCE_TAGS = {
   sedomicilier: ['Next.js', 'Payload CMS', 'Figma'],
   orguin: ['React', 'Supabase'],
   pause: [],
-  tudigo: ['React', 'Zustand', 'React Hook Form', 'Zod', 'Shadcn UI', 'Storybook'],
-  jellysmack: ['React', 'Vue.js', 'React Query', 'Apollo GraphQL', 'Tailwind', 'Turborepo'],
+  tudigo: [
+    'React',
+    'Zustand',
+    'React Hook Form',
+    'Zod',
+    'Shadcn UI',
+    'Storybook',
+  ],
+  jellysmack: [
+    'React',
+    'Vue.js',
+    'React Query',
+    'Apollo GraphQL',
+    'Tailwind',
+    'Turborepo',
+  ],
   yousign: ['React', 'Jest', 'Testing Library', 'Cypress'],
   ekino: ['AngularJS', 'Angular', 'React', 'Ionic', 'React Native', 'Electron'],
 } as const satisfies Record<ExperienceKey, readonly string[]>;
 
-const CURRENT_DOT_CLASSES =
-  'gradient-fill ring-4 ring-accent-soft';
+const CURRENT_DOT_CLASSES = 'gradient-fill ring-4 ring-accent-soft';
 const PAST_DOT_CLASSES = 'border-2 border-accent bg-background';
 const BULLET_LIST_CLASSES = 'list-disc space-y-2 pl-5 marker:text-accent';
 
@@ -79,7 +92,10 @@ export function Experience() {
               </div>
               <ul className={BULLET_LIST_CLASSES}>
                 {experience.items.map((item: string) => (
-                  <li key={item} className="text-sm md:text-base leading-relaxed">
+                  <li
+                    key={item}
+                    className="text-sm md:text-base leading-relaxed"
+                  >
                     {item}
                   </li>
                 ))}

@@ -34,8 +34,16 @@ site-needacoffee/
 ```json
 {
   "categories": [
-    { "id": "wikis", "title": { "fr": "Wikis", "en": "Wikis" }, "layout": "tiles" },
-    { "id": "apps", "title": { "fr": "Apps du quotidien", "en": "Everyday apps" }, "layout": "cards" }
+    {
+      "id": "wikis",
+      "title": { "fr": "Wikis", "en": "Wikis" },
+      "layout": "tiles"
+    },
+    {
+      "id": "apps",
+      "title": { "fr": "Apps du quotidien", "en": "Everyday apps" },
+      "layout": "cards"
+    }
   ],
   "projects": [
     {

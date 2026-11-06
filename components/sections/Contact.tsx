@@ -1,10 +1,10 @@
+import { Mail } from 'lucide-react';
 import { useTranslation } from '../../lib/i18n-app';
-import { Section } from '../ui/Section';
-import { SectionTitle } from '../ui/Typography';
+import { Github, Linkedin } from '../ui/BrandIcons';
 import { Button } from '../ui/Button';
 import { EmailReveal } from '../ui/EmailReveal';
-import { Mail } from 'lucide-react';
-import { Github, Linkedin } from '../ui/BrandIcons';
+import { Section } from '../ui/Section';
+import { SectionTitle } from '../ui/Typography';
 
 export function Contact() {
   const { t } = useTranslation();

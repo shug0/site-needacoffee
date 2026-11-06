@@ -3,16 +3,16 @@
 import { ArrowUp } from 'lucide-react';
 import { useTranslation } from '../lib/i18n-app';
 import type { CvProject } from '../lib/projects';
+import { Contact } from './sections/Contact';
+import { Education } from './sections/Education';
+import { Experience } from './sections/Experience';
+import { Hero } from './sections/Hero';
+import { Presentation } from './sections/Presentation';
+import { Projects } from './sections/Projects';
+import { Skills } from './sections/Skills';
 import { Button } from './ui/Button';
 import { Reveal } from './ui/Reveal';
 import { SiteNav } from './ui/SiteNav';
-import { Hero } from './sections/Hero';
-import { Presentation } from './sections/Presentation';
-import { Skills } from './sections/Skills';
-import { Experience } from './sections/Experience';
-import { Projects } from './sections/Projects';
-import { Education } from './sections/Education';
-import { Contact } from './sections/Contact';
 
 const CONTAINER_CLASSES = 'container mx-auto px-6 max-w-4xl lg:max-w-6xl';
 

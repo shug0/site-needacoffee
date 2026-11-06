@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { type ReactNode, useEffect, useRef, useState } from 'react';
 
 interface RevealProps {
   children: ReactNode;
@@ -29,11 +29,7 @@ export function Reveal({ children, className = '' }: RevealProps) {
   }, []);
 
   return (
-    <div
-      ref={ref}
-      data-visible={isVisible}
-      className={`reveal ${className}`}
-    >
+    <div ref={ref} data-visible={isVisible} className={`reveal ${className}`}>
       {children}
     </div>
   );
