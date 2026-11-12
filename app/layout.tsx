@@ -127,7 +127,7 @@ export default function RootLayout({
       <body className={`${openSans.variable} ${sora.variable} font-sans`}>
         <script
           defer
-          src="https://umami.namastourte.synology.me:8443/script.js"
+          src="https://umami.needacoffee.fr/script.js"
           data-website-id="8c4a4842-bb68-43c2-adaa-1d8258b67c5c"
           data-domains="cv.needacoffee.fr"
         />
